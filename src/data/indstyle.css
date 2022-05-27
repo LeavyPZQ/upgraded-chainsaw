@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+body {
+
+    text-align: center;
+    color: white;
+    background-color: #121212;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+    color: white;
+    background: linear-gradient(90deg, hsla(334, 95%, 51%, 1) 0%, hsla(328, 100%, 9%, 1) 100%);
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.logo {
+    font-family: 'Varela Round', sans-serif;
+    background: linear-gradient(to left, #66ffff 0%, #ff66ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3em;
+    margin-top: -2em;
+}

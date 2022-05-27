@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+header{
+    display: flex;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+
+body {
+    text-align: center;
+    color: white;
+    background-color: #121212;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #0088a9;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+    font-size: 1.3em;
+}
+
+button:hover {
+    padding: 9px 35px;
+    background-color: #0088a9;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.logo {
+    font-family: 'Varela Round', sans-serif;
+    background: linear-gradient(to left, #66ffff 0%, #ff66ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+li, a, button{
+    text-decoration: none;
+    color: #edf0f1;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    font-size: 1.3em;
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+    font-size: 1.5em;
+}
+
+.manga_read {
+    padding: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.manga_read img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
