@@ -29,7 +29,8 @@ body {
 
 button {
     padding: 9px 25px;
-    background-color: #0088a9;
+    background: linear-gradient(to left, #66ffff 0%, #ff66ff 100%);
+    color: #121212;
     border: none;
     border-radius: 50px;
     transition: all 0.3s ease 0s;
@@ -55,7 +56,7 @@ button:hover {
     cursor: pointer;
 }
 
-li, a, button{
+li, a{
     text-decoration: none;
     color: #edf0f1;
 }
