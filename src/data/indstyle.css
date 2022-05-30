@@ -12,9 +12,7 @@ button {
     background: linear-gradient(90deg, hsla(334, 95%, 51%, 1) 0%, hsla(328, 100%, 9%, 1) 100%);
     border: none;
     border-radius: 30px;
-    padding: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 10px 50px;
     font-size: 2em;
     cursor: pointer;
 }
