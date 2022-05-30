@@ -7,7 +7,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-button {
+#enterButton {
     color: white;
     background: linear-gradient(90deg, hsla(334, 95%, 51%, 1) 0%, hsla(328, 100%, 9%, 1) 100%);
     border: none;
