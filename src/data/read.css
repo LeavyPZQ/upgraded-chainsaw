@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
 
 *{
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
@@ -27,16 +26,17 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-button {
+#cta {
     padding: 9px 25px;
-    background-color: #0088a9;
+    background: linear-gradient(to left, #66ffff 0%, #ff66ff 100%);
+    color: #121212;
     border: none;
     border-radius: 50px;
     transition: all 0.3s ease 0s;
     font-size: 1.3em;
 }
 
-button:hover {
+#cta:hover {
     padding: 9px 35px;
     background-color: #0088a9;
     border: none;
@@ -55,7 +55,7 @@ button:hover {
     cursor: pointer;
 }
 
-li, a, button{
+li, a {
     text-decoration: none;
     color: #edf0f1;
 }
@@ -76,12 +76,14 @@ li, a, button{
 
 .nav_links li a:hover {
     color: #0088a9;
+    padding: 0 -5px;
     font-size: 1.5em;
 }
 
 .manga_read {
     padding: 10vh;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -90,5 +92,67 @@ li, a, button{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+#chap-nav {
+    margin-bottom: 40px;
+}
+
+#chap-nav a {
+    font-size: 1.5em;
+    padding: 10px 10px;
+    background: #bfa6ff;
+    color: #121212;
+    border-radius: 10px;
+    margin: 10px 50px;
+    transition: all 0.3s ease 0s;
+}
+
+#chap-nav a:hover {
+    font-size: 1.5em;
+    padding: 15px 15px;
+    border-radius: 10px;
+    margin: 5px 45px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .manga_read {
+        margin-bottom: -10px;
+    }
+
+    .manga_read img{
+        
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        flex-basis: 1;
+        flex-shrink: 0;
+        margin-bottom: -10px;
+    }
+
+    #chap-nav {
+        margin-top: -100px;
+    }
+
+    #chap-nav a {
+        font-size: 2.5em;
+        padding: 20px 20px;
+        background: #bfa6ff;
+        color: #121212;
+        border-radius: 10px;
+        margin: 10px 20px;
+        transition: all 0.3s ease 0s;
+    }
+
+    #chap-nav a:hover {
+        font-size: 1.5em;
+        padding: 15px 15px;
+        border-radius: 10px;
+        margin: 5px 70px;
+    }
+
+
+
 }
 

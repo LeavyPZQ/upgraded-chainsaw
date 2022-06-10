@@ -80,43 +80,17 @@ li, a{
     font-size: 1.5em;
 }
 
-img {
-    max-width: 20vw;
-
-    border-radius: 8px;
-}
-
-.feat_manga {
-    box-sizing: border-box;
+#mup {
+    margin: 30px 40vh;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #232323 0%, #ff66ff 100%);
+    padding: 20px 20px;
+    border-radius: 30px;
 }
 
-.manga {
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-#wrapper {
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    border-radius: 8px;
-}
-
-#wrapper img {
-    filter: grayscale(100%) blur(5px) brightness(50%);
+#mup p {
     
-}
-
-#wrapper div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 2em;
-    background: linear-gradient(to left, #66ffff 0%, #ff66ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+    text-align: left;
 }
