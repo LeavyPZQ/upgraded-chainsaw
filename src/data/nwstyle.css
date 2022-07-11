@@ -80,17 +80,51 @@ li, a{
     font-size: 1.5em;
 }
 
-#mup {
-    margin: 30px 40vh;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to bottom, #232323 0%, #ff66ff 100%);
-    padding: 20px 20px;
-    border-radius: 30px;
+
+img {
+    max-width: 20vw;
+
+    border-radius: 8px;
 }
 
-#mup p {
-    
-    margin-top: 10px;
+h1 {
+    margin: 20px 0;
     text-align: left;
+}
+
+.feat_manga {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 20px 0;
+}
+
+.manga {
+    padding: 10px 20px;
+    cursor: pointer;
+    justify-content: left;
+}
+
+#wrapper {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#wrapper img {
+    filter: grayscale(100%) blur(5px) brightness(50%);
+    
+}
+
+#wrapper div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    background: linear-gradient(to left, #66ffff 0%, #ff66ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

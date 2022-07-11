@@ -80,10 +80,15 @@ li, a{
     font-size: 1.5em;
 }
 
+
 img {
     max-width: 20vw;
 
     border-radius: 8px;
+}
+
+h1 {
+    margin: 20px 0;
 }
 
 .feat_manga {
@@ -91,6 +96,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 20px 0;
 }
 
 .manga {
