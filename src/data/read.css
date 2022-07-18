@@ -12,6 +12,8 @@
 header{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin: 10px 10px;
 }
 
 #nav-desktop{
@@ -67,25 +69,27 @@ li, a {
     color: #edf0f1;
 }
 
-.nav_links{
+.d-nav_links{
     list-style: none;
 }
 
-.nav_links li {
+.d-nav_links li {
     display: inline-block;
     padding: 0 20px;
 }
 
-.nav_links li a {
+.d-nav_links li a {
     transition: all 0.3s ease 0s;
     font-size: 1.3em;
 }
 
-.nav_links li a:hover {
+.d-nav_links li a:hover {
     color: #0088a9;
     padding: 0 -5px;
     font-size: 1.5em;
 }
+}
+
 
 .manga_read {
     padding: 10vh;
@@ -140,108 +144,209 @@ li, a {
 }
 
 #menu__toggle {
-    opacity: 0;
-  }
-  #menu__toggle:checked + .menu__btn > span {
-    transform: rotate(45deg);
-  }
-  #menu__toggle:checked + .menu__btn > span::before {
-    top: 0;
-    transform: rotate(0deg);
-  }
-  #menu__toggle:checked + .menu__btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
-  }
-  #menu__toggle:checked ~ .menu__box {
-    right: 0 !important;
-  }
-  .menu__btn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 5vh;
-    height: 5vh;
-    cursor: pointer;
-    z-index: 100;
-  }
-  .menu__btn > span,
-  .menu__btn > span::before,
-  .menu__btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 0.5vh;
-    background-color: #616161;
-    transition-duration: .25s;
-  }
-  .menu__btn > span::before {
-    content: '';
-    top: -8px;
-  }
-  .menu__btn > span::after {
-    content: '';
-    top: 8px;
-  }
-  .menu__box {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 300px;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    background-color: #343434;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-    transition-duration: .25s;
-  }
-  .menu__item {
-    display: block;
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  right: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 5vh;
+  height: 5vh;
+  cursor: pointer;
+  z-index: 100;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.5vh;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #343434;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.menu__box button {
+    background: none;
+    border: none;
     padding: 12px 24px;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
+    font-weight: 200;
     transition-duration: .25s;
-  }
-  .menu__item:hover {
-    background-color: #CFD8DC;
-  }
+}
 
-  .menu__box button {
-      background: none;
-      border: none;
-      padding: 12px 24px;
-      font-size: 20px;
-      font-weight: 200;
-      transition-duration: .25s;
-  }
+.menu__box button:hover {
+  background-color: #CFD8DC;
+}
 
-  .menu__box button:hover {
-    background-color: #CFD8DC;
-  }
+#psm {
+    display: inline;
+}
 
-  #psm {
-      display: inline;
-  }
+/*Nav menu*/
+#toggle {
+  display: none;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+  position: fixed;
+  bottom: 2em;
+  right: 50%;
+  margin-left: -2em;
+  margin-top: -45px;
+  width: 2em;
+  height: 45px;
+  z-index: 5;
+}
+
+.hamburger div {
+  position: relative;
+  width: 3em;
+  height: 7px;
+  border-radius: 3px;
+  background-color: #f8982b;
+  margin-top: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+/**
+Nav Styles
+**/
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #090E6B;
+  top: 100%; left: 0; right: 0; bottom: -100%;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+nav {
+  text-align: left;
+  margin-left: 25%;
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #6ecddd;
+  font-size: 2em;
+  display: inline-block;
+  margin-top: 1.25em;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+nav a:before {
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: white;
+  left: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+nav a:hover {
+  color: white;
+}
+nav a:hover:before {
+  height: 100%;
+}
+
+/**
+Animations
+**/
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+
+#toggle:checked ~ .menu__btn {
+  display: none;
+}
+
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -7px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
 
 
 @media only screen and (max-width: 1000px) {
 
+  header {
+    margin: 0 0;
+  }
 
 
-    #menu-desktop{
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-        font-family: 'Ubuntu', sans-serif;
-        padding: 30px 10%;
+  #nav-desktop{
+      display: none;
+
     }
     
     .nav_links li {
@@ -253,6 +358,7 @@ li, a {
 
     .manga_read {
         margin-bottom: -10px;
+
     }
 
     .manga_read img{
