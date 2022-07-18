@@ -8,16 +8,36 @@
     
     <body>
         <header>
-            <div class="logo">
-                <a href="mainpage.html"><h1>Mangafy</h1></a>
+            <div id="nav-desktop">
+                <div class="logo">
+                    <a href="mainpage.html"><h1>Mangafy</h1></a>
+                </div>
+                <nav>
+                    <ul class="d-nav_links">
+                        <li><a href="list.html">Manga List</a></li>
+                        <li><a href="new.html">New Manga</a></li>
+                    </ul>
+                </nav>
+                <a id="cta" href="#">Contact</a>    
             </div>
-            <nav>
-                <ul class="nav_links">
-                    <li><a href="list.html">Manga List</a></li>
-                    <li><a href="new.html">New Manga</a></li>
-                </ul>
-            </nav>
-            <a id="cta" href="#">Contact</a>
+            <div id="nav-mobile">
+                <input id="toggle" type="checkbox"></input>
+                <label for="toggle" class="hamburger">
+                  <div class="top-bun"></div>
+                  <div class="meat"></div>
+                  <div class="bottom-bun"></div>
+                </label>
+                <div class="nav">
+                  <div class="nav-wrapper">
+                    <nav>
+                      <a href="#">HOME</a><br>
+                      <a href="#">ABOUT</a><br>
+                      <a href="#">WORK</a><br>
+                      <a href="#">SERVICES</a>
+                    </nav>
+                  </div>
+                </div>
+            </div>
         </header>
 
         <div class="hamburger-menu">
@@ -39,7 +59,7 @@
               <li><a class="menu__item" href="#">Place Holder</a></li>
               <li><a class="menu__item" href="#">Place Holder</a></li>
             </ul>
-          </div>
+        </div>
 
         <div class="manga_read">
             <img src="https://i.ibb.co/QcChbDH/Page-6.jpg" alt="Page-6" class="pageM">
